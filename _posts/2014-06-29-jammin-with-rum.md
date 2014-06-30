@@ -19,7 +19,7 @@ Simple: It's tasty.  It is really the only hard liquir that we use in our home m
 
 ## Enter the Internet
 
-Ah, that evre changing landscape of accumulated human knowledge (30% cat videos).  Heather found what seemed like a fantastic recipe for making preserves with rum.  I tried it this weekend, and it was AMAZING!!!  Not quite the consistency we were expecting, and yet delicious.
+Ah, that ever changing landscape of accumulated human knowledge (30% cat videos).  Heather found what seemed like a fantastic recipe for making preserves with rum.  I tried it this weekend, and it was AMAZING!!!  Not quite the consistency we were expecting, and yet delicious.
 
 For those that are curious, you will find the recipe here:
 
