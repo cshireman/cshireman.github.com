@@ -7,6 +7,8 @@ tags: [blogging,jekyll,wordpress]
 ---
 {% include JB/setup %}
 
+![jekyll](http://jekyllrb.com/img/logo-2x.png)
+
 Happy Independence Day Everyone!  
 
 Now that I have converted everything from my wordpress blog over to my Jekyll blog, I have determined that it is a very error prone process.  Even so, perhaps listing the steps for producing a properly functioning Jekyll blog following the export of my wordpress posts will help someone along the way.
