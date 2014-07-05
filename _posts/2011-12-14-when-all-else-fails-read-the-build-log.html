@@ -1,0 +1,23 @@
+---
+layout: post
+title: When all else fails - read the build log
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  posterous_4ee7289d5e3144ac6f3d777f6b2a2848_post_id: '86341374'
+  posterous_4ee7289d5e3144ac6f3d777f6b2a2848_permalink: http://sloshire1.posterous.com/when-all-else-fails-read-the-build-log
+author:
+  login: admin
+  email: chris@shireman.net
+  display_name: Christopher Shireman
+  first_name: ''
+  last_name: ''
+---
+
+<p>I just spent the last several hours searching for the cause of an error in one of my mobile app projects. &nbsp;Keep in mind that this same project already works in the simulator on iPhone and iPad. &nbsp;I was trying to get it to build for the actuall device, and I ran into this error &nbsp;This particular error manifested itself as an error in the compiler with the oh-so-helpful statement that it was SystemCode: 65. &nbsp;</p>
+<p>After a lot of searching online and several dead ends, I finally figured out that this particular error seems to be a catch-all for the Appcelerator compiler whenever anything goes wrong with the Xcode build of an app. &nbsp;In my particular case a module that talks to Google Analytics was the source of my frustration. &nbsp;I downloaded an updated version of the module and it now seems to work perfectly. &nbsp;</p>
+<p>I didn't figure this out by asking for help from other developers on some random forums or some fantastic tutorial on how get apps distributed for testing with Titanium. No, I finally broke down and read through the build log. &nbsp;I know, seems like an obvious answer, but it is kind of like asking for directions - it's almost an insult to my ego that I would stoop so low as to actually read through the build log. &nbsp;I know, it's stupid, but the truth. &nbsp;Let this be a lesson to any other developers who think they know better than the compiler -- YOU DON'T.</p>
+<p>In any case, it solved the problem. &nbsp;The app now builds and installs on my device. &nbsp;Hopefully the client will find it to their liking :). &nbsp;It's 12:15 in the morning, I'm going to sleep right after I send the app to the client.</p>

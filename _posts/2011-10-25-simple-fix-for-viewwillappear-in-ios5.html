@@ -1,0 +1,32 @@
+---
+layout: post
+title: Simple Fix for viewWillAppear in iOS5
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  posterous_4ee7289d5e3144ac6f3d777f6b2a2848_post_id: '77176267'
+  posterous_4ee7289d5e3144ac6f3d777f6b2a2848_permalink: http://sloshire1.posterous.com/simple-fix-for-viewwillappear-in-ios5
+author:
+  login: admin
+  email: chris@shireman.net
+  display_name: Christopher Shireman
+  first_name: ''
+  last_name: ''
+---
+
+<p>For those who have tried upgrading to iOS5, you will notice that the navigation controllers no longer call the viewWillAppear and viewWillDisappear methods on your view controllers when pushing and poping from the stack. &nbsp;I was about to go nuts when I realized a simple solution to the problem. &nbsp;I have an existing project that uses a custom navigation controller. &nbsp;It was originally done to provide a custom background for the title bar, but now it is saving my but functionally. &nbsp;To regain the functionality of the viewWillAppear and viewWillDisappear in your navigation popViewControllerAnimated method add this method to your custom navigation controller:</p>
+<p>&nbsp;</p>
+<p><p class="p1">- (<span class="s1">UIViewController</span> *)popViewControllerAnimated:(<span class="s2">BOOL</span>)animated</p>
+<p class="p1">{</p>
+<p class="p1">&nbsp; &nbsp; <span class="s1">UIViewController</span>* viewController = [<span class="s2">super</span> <span class="s3">popViewControllerAnimated</span>:animated];</p>
+<p class="p1">&nbsp; &nbsp; <span class="s1">UIViewController</span>* nextViewControler = [<span class="s2">self</span>.<span class="s1">viewControllers</span> <span class="s3">lastObject</span>];</p>
+<p class="p1">&nbsp; &nbsp; [nextViewControler <span class="s3">viewWillAppear</span>:animated];</p>
+<p class="p1">&nbsp; &nbsp; [viewController <span class="s3">viewWillDisappear</span>:animated];</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">&nbsp; &nbsp; <span class="s2">return</span> viewController;</p>
+<p class="p1">}</p></p>
+<p class="p1">&nbsp;</p>
+<p class="p1">I hope this helps someone, it took me forever to get this far.</p>

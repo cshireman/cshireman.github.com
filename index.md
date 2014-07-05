@@ -5,12 +5,14 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-{% for post in site.posts %}
-# [{{post.title}}] ({{ BASE_PATH }}{{post.url}})
+{% for post in site.posts limit:10 %}
+<h2><a href="{{ BASE_PATH }}{{ post.url }}">{{post.title}}</a></h2>
 
 {{post.description}} 
 
-[read more] ({{ BASE_PATH }}{{post.url}})
+<a href="{{ BASE_PATH }}{{ post.url }}">read more</a>
+<br/>
+<br/>
 
 {% endfor %}
 
