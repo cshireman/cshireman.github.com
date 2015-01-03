@@ -1,22 +1,8 @@
-<<<<<<< HEAD
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
-markdown: kramdown
-
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
-
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : Christopher Shireman's Blog
-tagline: ""
-author :
-  name : Christopher Shireman
-  email : chris@shireman.net
-  github : cshireman
-  twitter : cshireman
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -138,7 +124,7 @@ production_url : http://shireman.net
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: /
+baseurl: 
 
 # Set this to your UA-# value, or '' to disable the block completely
 gaaccount: 'UA-52529391-1'
@@ -152,8 +138,7 @@ comments: false
 paginate: 3
 
 highlighter: pygments
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-exclude: ['README.md', 'LICENSE']
