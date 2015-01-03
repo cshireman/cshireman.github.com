@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
@@ -16,16 +17,6 @@ author :
   email : chris@shireman.net
   github : cshireman
   twitter : cshireman
-
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://shireman.net
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -129,3 +120,40 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+# Jekyll configuration
+
+name: Christopher Shireman's Blog
+description: 
+author :
+  name : Christopher Shireman
+  email : chris@shireman.net
+  github : cshireman
+  twitter : cshireman
+
+# url is currently only used only for the RSS feed in feed.xml
+url: http://shireman.net
+production_url : http://shireman.net
+
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: /
+
+# Set this to your UA-# value, or '' to disable the block completely
+gaaccount: 'UA-52529391-1'
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: ''
+comments: false
+
+paginate: 3
+
+highlighter: pygments
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+exclude: ['README.md', 'LICENSE']
