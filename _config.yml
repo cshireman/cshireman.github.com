@@ -131,7 +131,7 @@ author :
   twitter : cshireman
 
 # url is currently only used only for the RSS feed in feed.xml
-url: http://shireman.net
+url: http://shireman.net/rss
 production_url : http://shireman.net
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
