@@ -122,12 +122,12 @@ JB :
   
 # Jekyll configuration
 
+github : cshireman
 name: Christopher Shireman's Blog
 description: 
 author :
   name : Christopher Shireman
   email : chris@shireman.net
-  github : cshireman
   twitter : cshireman
 
 # url is currently only used only for the RSS feed in feed.xml
