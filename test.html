@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<script type="text/javscript">
+
+function buttonAPushed()
+{
+        ga(
+            'send', 
+            {
+                'hitType': 'event',
+                'eventCategory': 'button',
+                'eventAction': 'pushed',
+                'eventLabel': 'button name',
+                'eventValue': 'A'
+            }
+        );     
+}
+
+function buttonBPushed()
+{
+        ga(
+            'send', 
+            {
+                'hitType': 'event',
+                'eventCategory': 'button',
+                'eventAction': 'pushed',
+                'eventLabel': 'button name',
+                'eventValue': 'B'
+            }
+        );     
+}
+</script>
+
+<div class="well">
+    <h1>Event Test</h1>
+    <p>This is a test page for google events..</p>
+
+<button onclick="buttonAPushed()">Button A</button>
+<button onclick="buttonBPushed()">Button B</button>
+</div>
