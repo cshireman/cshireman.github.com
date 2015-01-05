@@ -2,13 +2,11 @@
 layout: default
 ---
 
-<script type="text/javscript">
+<script>
 
 function buttonAPushed()
 {
-	alert('Button A');
-
-/*        ga(
+        ga(
             'send', 
             {
                 'hitType': 'event',
@@ -18,7 +16,6 @@ function buttonAPushed()
                 'eventValue': 'A'
             }
         );     
-*/
 }
 
 function buttonBPushed()
@@ -40,6 +37,6 @@ function buttonBPushed()
     <h1>Event Test</h1>
     <p>This is a test page for google events..</p>
 
-<button onclick="javascript::buttonAPushed()">Button A</button>
-<button onclick="javascript::buttonBPushed()">Button B</button>
+<button onclick="javascript:buttonAPushed()">Button A</button>
+<button onclick="javascript:buttonBPushed()">Button B</button>
 </div>
