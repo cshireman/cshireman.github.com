@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 markdown: kramdown
+github : cshireman
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
@@ -15,7 +15,6 @@ tagline: ""
 author :
   name : Christopher Shireman
   email : chris@shireman.net
-  github : cshireman
   twitter : cshireman
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
@@ -122,6 +121,7 @@ JB :
   
 # Jekyll configuration
 
+gaaccount: 'UA-52529391-1'
 github : cshireman
 name: Christopher Shireman's Blog
 description: 
@@ -138,10 +138,9 @@ production_url : http://shireman.net
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: /
+baseurl: 
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-52529391-1'
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to

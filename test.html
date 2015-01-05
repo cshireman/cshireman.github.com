@@ -6,30 +6,12 @@ layout: default
 
 function buttonAPushed()
 {
-        ga(
-            'send', 
-            {
-                'hitType': 'event',
-                'eventCategory': 'button',
-                'eventAction': 'pushed',
-                'eventLabel': 'button name',
-                'eventValue': 'A'
-            }
-        );     
+        ga('send', 'event', 'button', 'pushed', 'button name', 'A');
 }
 
 function buttonBPushed()
 {
-        ga(
-            'send', 
-            {
-                'hitType': 'event',
-                'eventCategory': 'button',
-                'eventAction': 'pushed',
-                'eventLabel': 'button name',
-                'eventValue': 'B'
-            }
-        );     
+        ga('send', 'event', 'button', 'pushed', 'button name', 'B');
 }
 </script>
 
