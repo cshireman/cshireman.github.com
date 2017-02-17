@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "47UH3S589T.com.clorox.freshsteployalty.staging",
+                "paths": [ "/mobile/app-download/"]
+            },
+            {
+                "appID": "TN8JSVA5Y8.com.clorox.freshstep.ios.pawpoints",
+                "paths": [ "/mobile/app-download/" ]
+            }
+        ]
+    }
+}
