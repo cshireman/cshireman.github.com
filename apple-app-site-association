@@ -9,6 +9,10 @@
             {
                 "appID": "TN8JSVA5Y8.com.clorox.freshstep.ios.pawpoints",
                 "paths": [ "/mobile/app-download/" ]
+            },
+            {
+                "appID": "S6GR66BQ4K.com.verticalpeguin.UniversalLinks",
+                "paths": [ "/mobile/app-download/" ]
             }
         ]
     }
